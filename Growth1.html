@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <!-- Bootstrap CSS for styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Linking external CSS file -->
+    <link rel="stylesheet" href="styles3.css">
+    
+    <!-- Bootstrap JS for interactivity (Navbar toggling, etc.) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a passionate and driven Computer Science student at Anurag University, with a strong foundation in programming, AI/ML, and web development. My goal is to leverage my technical skills and problem-solving abilities to contribute to innovative projects and industry advancements.</p>
+            <p>With experience in Java, Python, and AI/ML technologies, I have worked on projects like real-time helmet detection and number plate extraction using YOLO and OpenCV. I have also interned in AI/ML and Java development, gaining hands-on experience in cutting-edge technologies.</p>
+            <p>Beyond academics, I actively participate in tech clubs and events, such as blockchain app handling and AI conferences. I am always eager to learn, adapt to new challenges, and collaborate on impactful projects.</p>
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Technical Skills</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item">HTML</li>
+                        <li class="list-group-item">CSS</li>
+                        <li class="list-group-item">JavaScript</li>
+                        <li class="list-group-item">React</li>
+                        <li class="list-group-item">Node.js</li>
+                        <li class="list-group-item">Python</li>
+                        <li class="list-group-item">Java</li>
+                        <li class="list-group-item">AI/ML (TensorFlow, OpenCV, YOLO)</li>
+                        <li class="list-group-item">SQL & NoSQL Databases</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h4>Non-Technical Skills</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item">Problem-Solving</li>
+                        <li class="list-group-item">Critical Thinking</li>
+                        <li class="list-group-item">Teamwork & Collaboration</li>
+                        <li class="list-group-item">Time Management</li>
+                        <li class="list-group-item">Leadership</li>
+                        <li class="list-group-item">Communication Skills</li>
+                        <li class="list-group-item">Adaptability</li>
+                        <li class="list-group-item">Public Speaking</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 1</h5>
+                            <p class="card-text"><b>Description of project 1.</b><br>In many countries, traffic violations—such as riding without a helmet—pose a significant risk to road safety. To address this issue, I developed a real-time Helmet Detection and Number Plate Extraction System using AI and Computer Vision. This project automates the process of detecting helmet-less riders and identifying their vehicles by extracting number plates, ultimately assisting traffic authorities in enforcing laws more efficiently.
+
+                              The system captures live video footage or processes images from surveillance cameras. Using YOLO (You Only Look Once), an advanced deep-learning object detection model, it identifies motorcyclists without helmets. Simultaneously, OCR (Optical Character Recognition) and OpenCV extract the number plates of violators, enabling automatic challan (fine) generation.</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 2</h5>
+                            <p class="card-text"><b>Description of project 2.</b><br>The Personal Fitness Tracker is a Python-based application designed to help individuals monitor and manage their fitness activities, diet, and overall health in an accessible and user-friendly manner. Unlike expensive wearable-based fitness solutions, this tracker provides a cost-effective and customizable alternative, enabling users to track their progress without requiring additional hardware or subscriptions.
+
+                              The system allows users to log workouts, track calorie intake, monitor hydration levels, and analyze progress over time through graphical visualizations. The project leverages Python libraries such as Tkinter/PyQt for GUI, SQLite for data storage, and Matplotlib/Seaborn for data visualization.</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Footer Section -->
+    <footer>
+        <p>@2025 mukeshpadigela.portfolio</p>
+    </footer>
+</body>
+</html>
